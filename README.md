@@ -18,16 +18,14 @@ This project successfully implements the following guidelines:
 
 ---
 
-## Hardware Components
+## Key Components
 
 This project is designed and simulated in Proteus. The required virtual components are:
 
 * **Main Board:** Arduino UNO R3
 * **Display:** 16x2 Alphanumeric LCD (LM016L)
-* **Inputs:** 4x Tactile Push Buttons (Candidate A, Candidate B, Results, Home)
-* **Memory:** 24LC256 I2C EEPROM Chip (or using the Arduino's internal EEPROM)
-* **Supporting Components:**
-    * 10kΩ Potentiometer (for LCD contrast)
+* **Inputs:** 4x Tactile Push Buttons
+* **Memory:** 24LC256 I2C EEPROM Chip
 
 ---
 
@@ -35,29 +33,6 @@ This project is designed and simulated in Proteus. The required virtual componen
 
 * **Simulation:** Proteus Design Suite (Version 8.6 or newer)
 * **Firmware Development:** Arduino IDE (Version 1.8 or newer)
-
----
-
-## How to Use
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [your-repository-url]
-    ```
-2.  **Open the Simulation:**
-    * Navigate to the project folder and open the Proteus project file (`.pdsprj`).
-
-3.  **Compile the Firmware:**
-    * Open the Arduino source code (`.ino` file) in the Arduino IDE.
-    * Go to **Sketch > Export Compiled Binary**. This will create a `.hex` file in the same folder.
-
-4.  **Load the Firmware into Proteus:**
-    * In the Proteus schematic, double-click the Arduino UNO model.
-    * In the "Program File" field, click the folder icon and select the `.hex` file you just created.
-    * Ensure the "Processor Clock Frequency" is set to **16MHz**.
-
-5.  **Run the Simulation:**
-    * Click the "Play" button at the bottom of the Proteus window to start the simulation.
 
 ---
 
